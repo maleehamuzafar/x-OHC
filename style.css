@@ -1,7 +1,7 @@
 body {
 	color: white;
-	background-color: black;
 	margin: 0 auto;
+	background-color: black;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
 		"Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -20,17 +20,105 @@ body {
 	width: 100vw;
 	flex-grow: 1;
 	display: flex;
-	flex-direction: row-reverse;
-	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
 }
 
 #logo {
 	min-width: 45vw;
-	justify-self: center;
+	text-align: center;
 }
 
 #logo svg {
 	max-height: 380px;
+}
+
+#auth {
+	min-width: 40vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.heading1 {
+	font-size: 4rem;
+	margin-bottom: 0;
+}
+
+.heading3 {
+	font-size: 2rem;
+}
+
+.heading5 {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.btn {
+	all: unset;
+	width: 300px;
+	min-width: min-content;
+	text-align: center;
+	margin: 4px;
+	border-radius: 40px;
+	padding: 10px;
+}
+
+.btn:hover {
+	cursor: pointer;
+	filter: brightness(90%);
+}
+
+.btn-auth {
+	background: white;
+	color: black;
+}
+
+.btn-primary {
+	background: #1d9bf0;
+	color: white;
+}
+
+.btn-outline {
+	color: #1d9bf0;
+	border: 1px solid #71767b;
+}
+
+.icon {
+	height: 18px;
+	width: 18px;
+}
+
+.divider {
+	font-size: small;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	width: 330px;
+	margin: 10px 0;
+}
+
+.divider::before,
+.divider::after {
+	flex: 1;
+	content: "";
+	padding: 0.5px;
+	background-color: #2f3336;
+	margin: 5px;
+}
+
+#legal {
+	width: 330px;
+	color: #71767b;
+}
+
+#legal a {
+	color: #1d9bf0;
+	text-decoration: none;
+}
+
+.caption {
+	color: inherit;
+	font-size: 11px;
 }
 
 /* Footer */
