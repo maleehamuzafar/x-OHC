@@ -12,6 +12,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
+	padding: 10px;
 }
 
 /* Content */
@@ -25,8 +26,8 @@ body {
 }
 
 #logo {
-	min-width: 45vw;
 	text-align: center;
+	flex-grow: 1;
 }
 
 #logo svg {
@@ -147,4 +148,22 @@ body {
 
 .link-item a:hover {
 	text-decoration: underline solid #71767b;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+	#content {
+		width: fit-content;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	#logo {
+		min-width: 3rem;
+		align-self: flex-start;
+		vertical-align: middle;
+		flex-grow: unset;
+	}
 }
